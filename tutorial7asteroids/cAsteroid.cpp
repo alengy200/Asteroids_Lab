@@ -34,7 +34,8 @@ void cAsteroid::update(double deltaTime)
 	currentSpritePos.x += this->getSpriteTranslation().x * deltaTime;
 	currentSpritePos.y += this->getSpriteTranslation().y * deltaTime;
 
-	this->setSpritePos({ currentSpritePos.x, currentSpritePos.y });
+	this->setSpritePos({ currentSpritePos.x, currentSpritePos.y });	
+
 	cout << "Asteroid position - x: " << this->getSpritePos().x << " y: " << this->getSpritePos().y << " deltaTime: " << deltaTime << endl;
 	this->setBoundingRect(this->getSpritePos());
 }
